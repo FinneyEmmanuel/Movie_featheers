@@ -1,0 +1,64 @@
+{
+  "name": "movie-rental-feathers-app",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^16.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run jest",
+    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest --forceExit"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathers-plus/validate-joi-mongodb": "^1.0.0",
+    "@feathersjs/authentication": "^4.5.12",
+    "@feathersjs/authentication-local": "^4.5.12",
+    "@feathersjs/authentication-oauth": "^4.5.12",
+    "@feathersjs/configuration": "^4.5.12",
+    "@feathersjs/errors": "^4.5.12",
+    "@feathersjs/express": "^4.5.12",
+    "@feathersjs/feathers": "^4.5.12",
+    "@feathersjs/socketio": "^4.5.13",
+    "@feathersjs/transport-commons": "^4.5.12",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-mongoose": "^8.5.1",
+    "feathers-validate-joi": "^4.0.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.6.0",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^6.2.7",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  }
+}
